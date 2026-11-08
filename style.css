@@ -1,0 +1,122 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full screen container with a background image */
+.background-container {
+    width: 100%;
+    height: 100vh;
+    /* Replace with your own image URL */
+    background-image: url('https://mrwallpaper.com/images/high/anime-girl-poses-while-holding-laptop-stylus-otlij5ko8hp0cudp.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The card where the blur effect is applied */
+.signup-card {
+    width: 110%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 16px;
+    color: #000000;
+    
+    /* CRITICAL BLUR PROPERTIES: */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(3px);          /* Blurs the area behind the card */
+    -webkit-backdrop-filter: blur(12px);  /* Safari support */
+    
+    /* Aesthetics */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.3);
+}
+
+.signup-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Input Fields Setup */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-group input {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(39, 35, 35, 0.849);
+    color: #fafafa;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Subtle placeholder styling */
+.input-group input::placeholder {
+    color: rgba(250, 234, 245, 0.87);
+}
+
+/* Glow effect on input focus */
+.input-group input:focus {
+    border-color: #befcec;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Interactive Submit Button */
+.signup-btn {
+    width: 100%;
+    padding: 14px;
+    background: #69c1c7;
+    color: #111111;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+    background: #332929;
+    transform: translateY(-2px);
+}
+
+/* Footer Link styling */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(92, 74, 74, 0.8);
+}
+
+.login-link a {
+    color: #dd0f0f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    hover {
+        color: #ff4c4c;
+    }
+}
